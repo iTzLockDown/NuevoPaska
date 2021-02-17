@@ -1,22 +1,22 @@
 {
-  "name": "@coreui/coreui-free-angular-admin-template",
+  "name": "PaskaWeb",
   "version": "2.11.1",
-  "description": "CoreUI Free Angular 11 Admin Template",
+  "description": "Sistema web para contratos",
   "author": {
-    "name": "Łukasz Holeczek",
-    "url": "http://holeczek.pl",
-    "github": "https://github.com/mrholek",
-    "twitter": "https://twitter.com/lukaszholeczek"
+    "name": "",
+    "url": "",
+    "github": "",
+    "twitter": ""
   },
   "contributors": [
     {
-      "name": "Andrzej Kopański",
-      "url": "https://github.com/xidedix"
+      "name": "Wilhelm Ruiz",
+      "url": ""
     }
   ],
-  "homepage": "https://coreui.io/angular",
-  "copyright": "Copyright 2021 creativeLabs Łukasz Holeczek",
-  "license": "MIT",
+  "homepage": "",
+  "copyright": "Copyright 2021 Caja Huancayo",
+  "license": "caja huancayo",
   "scripts": {
     "ng": "ng",
     "postinstall": "ngcc --properties es2015 browser module main --first-only",
