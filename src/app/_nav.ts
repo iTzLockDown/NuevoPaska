@@ -12,60 +12,60 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Gestion Atencion',
-    url: '/base',
+    url: '/base1',
     icon: 'icon-direction',
     children: [
       {
         name: 'Gestion',
-        url: '/base/cards',
+        url: '/base1/cards',
         icon: 'icon-list'
       }
     ]
   },
   {
     name: 'Solicitudes',
-    url: '/base',
+    url: '/base2',
     icon: 'icon-direction',
     children: [
       {
         name: 'Nuevo',
-        url: '/base/cards',
+        url: '/base2/cards',
         icon: 'icon-list'
       }
     ]
   },
   {
     name: 'Contratos',
-    url: '/base',
+    url: '/base3',
     icon: 'icon-direction',
     children: [
       {
         name: 'Nuevo',
-        url: '/base/cards',
+        url: '/base3/cards',
         icon: 'icon-list'
       }
     ]
   },
   {
     name: 'Gravamen',
-    url: '/base',
+    url: '/base4',
     icon: 'icon-direction',
     children: [
       {
         name: 'Nuevo',
-        url: '/base/cards',
+        url: '/base4/cards',
         icon: 'icon-list'
       }
     ]
   },
   {
     name: 'Inmoviliario',
-    url: '/base',
+    url: '/base5',
     icon: 'icon-direction',
     children: [
       {
         name: 'Nuevo',
-        url: '/base/cards',
+        url: '/base5/cards',
         icon: 'icon-list'
       }
     ]
@@ -81,22 +81,22 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Tipos de Solicitud',
-        url: '/base/cards',
+        url: '/base/tiposolicitud',
         icon: 'icon-list'
       },
       {
         name: 'Requisitos',
-        url: '/base/cards',
+        url: '/base/requisitos',
         icon: 'icon-list'
       },
       {
         name: 'Estados Solicitud',
-        url: '/base/cards',
+        url: '/base/estado',
         icon: 'icon-list'
       },
       {
         name: 'Situacion Solicitud',
-        url: '/base/cards',
+        url: '/base/situacion',
         icon: 'icon-list'
       },
       {
@@ -108,17 +108,17 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Gestion Personal',
-    url: '/base',
+    url: '/base7',
     icon: 'icon-direction',
     children: [
       {
         name: 'Gestion Colas',
-        url: '/base/cards',
+        url: '/base7/cards',
         icon: 'icon-list'
       },
       {
         name: 'Gestion Oficinas',
-        url: '/base/cards',
+        url: '/base7/cards',
         icon: 'icon-list'
       }
     ]

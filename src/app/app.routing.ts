@@ -8,11 +8,12 @@ import { P404Component } from './views/error/404.component';
 import { P500Component } from './views/error/500.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
+import {AutentificacionGuard} from './Guards/autentificacion.guard';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -52,34 +53,42 @@ export const routes: Routes = [
     children: [
       {
         path: 'base',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/base/base.module').then(m => m.BaseModule)
       },
       {
         path: 'buttons',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/buttons/buttons.module').then(m => m.ButtonsModule)
       },
       {
         path: 'charts',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/chartjs/chartjs.module').then(m => m.ChartJSModule)
       },
       {
         path: 'dashboard',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
       },
       {
         path: 'icons',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/icons/icons.module').then(m => m.IconsModule)
       },
       {
         path: 'notifications',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/notifications/notifications.module').then(m => m.NotificationsModule)
       },
       {
         path: 'theme',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/theme/theme.module').then(m => m.ThemeModule)
       },
       {
         path: 'widgets',
+        canActivate: [AutentificacionGuard],
         loadChildren: () => import('./views/widgets/widgets.module').then(m => m.WidgetsModule)
       }
     ]

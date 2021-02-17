@@ -1,18 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CardsComponent } from './cards.component';
-import { FormsComponent } from './forms.component';
-import { SwitchesComponent } from './switches.component';
-import { TablesComponent } from './tables.component';
-import { TabsComponent } from './tabs.component';
-import { CarouselsComponent } from './carousels.component';
-import { CollapsesComponent } from './collapses.component';
-import { PaginationsComponent } from './paginations.component';
-import { PopoversComponent } from './popovers.component';
-import { ProgressComponent } from './progress.component';
-import { TooltipsComponent } from './tooltips.component';
 import { NavbarsComponent } from './navbars/navbars.component';
+import {AutentificacionGuard} from '../../Guards/autentificacion.guard';
+import {TipoSolicitudComponent} from './tipo-solicitud/tipo-solicitud.component';
+import {SolicitudProcesoComponent} from './tipo-solicitud/solicitud-proceso/solicitud-proceso.component';
+import {TipoRequerimientoComponent} from './tipo-requerimiento/tipo-requerimiento.component';
+import {EstadoSolicitudComponent} from './estado-solicitud/estado-solicitud.component';
+import {SituacionSolicitudComponent} from './situacion-solicitud/situacion-solicitud.component';
 
 const routes: Routes = [
   {
@@ -26,87 +21,45 @@ const routes: Routes = [
         redirectTo: 'cards'
       },
       {
-        path: 'cards',
-        component: CardsComponent,
-        data: {
-          title: 'Cards'
-        }
-      },
-      {
-        path: 'forms',
-        component: FormsComponent,
-        data: {
-          title: 'Forms'
-        }
-      },
-      {
-        path: 'switches',
-        component: SwitchesComponent,
-        data: {
-          title: 'Switches'
-        }
-      },
-      {
-        path: 'tables',
-        component: TablesComponent,
-        data: {
-          title: 'Tables'
-        }
-      },
-      {
-        path: 'tabs',
-        component: TabsComponent,
-        data: {
-          title: 'Tabs'
-        }
-      },
-      {
-        path: 'carousels',
-        component: CarouselsComponent,
-        data: {
-          title: 'Carousels'
-        }
-      },
-      {
-        path: 'collapses',
-        component: CollapsesComponent,
-        data: {
-          title: 'Collapses'
-        }
-      },
-      {
-        path: 'paginations',
-        component: PaginationsComponent,
-        data: {
-          title: 'Pagination'
-        }
-      },
-      {
-        path: 'popovers',
-        component: PopoversComponent,
-        data: {
-          title: 'Popover'
-        }
-      },
-      {
-        path: 'progress',
-        component: ProgressComponent,
-        data: {
-          title: 'Progress'
-        }
-      },
-      {
-        path: 'tooltips',
-        component: TooltipsComponent,
-        data: {
-          title: 'Tooltips'
-        }
-      },
-      {
         path: 'navbars',
         component: NavbarsComponent,
         data: {
           title: 'Navbars'
+        }
+      },
+      {
+        path: 'tiposolicitud',
+        component: TipoSolicitudComponent,
+        data: {
+          title: 'Tipo Solicitud'
+        }
+      },
+      {
+        path: 'tiposolicitud/proceso/:id',
+        component: SolicitudProcesoComponent,
+        data: {
+          title: 'Proceso'
+        }
+      },
+      {
+        path: 'requisitos',
+        component: TipoRequerimientoComponent,
+        data: {
+          title: 'Requisito'
+        }
+      },
+      {
+        path: 'estado',
+        component: EstadoSolicitudComponent,
+        data: {
+          title: 'Estado Solicitud'
+        }
+      },
+      {
+        path: 'situacion',
+        component: SituacionSolicitudComponent,
+        data: {
+          title: 'Situacion Solicitud'
         }
       }
     ]
