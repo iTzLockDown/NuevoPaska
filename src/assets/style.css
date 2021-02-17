@@ -1,0 +1,20 @@
+
+.btn-cmac-hyo,
+.btn-cmac-hyo:hover,
+.btn-cmac-hyo:active,
+.btn-cmac-hyo:visited,
+.btn-cmac-hyo:focus,
+.btn-cmac-hyo:active:focus
+{
+  background: #c1001f;
+  border-color: #c1001f;
+  box-shadow: #c1001f;
+  color: white;
+  border-radius: 0;
+  border-bottom-color: #c1001f;
+}
+
+.sidebar .nav-link.active {
+  color: #fff;
+  background: #c1001f;
+}
