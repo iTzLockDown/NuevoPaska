@@ -16,6 +16,8 @@ import {TipoSolicitudComponent} from './tipo-solicitud/tipo-solicitud.component'
 import {TipoRequerimientoComponent} from './tipo-requerimiento/tipo-requerimiento.component';
 import {EstadoSolicitudComponent} from './estado-solicitud/estado-solicitud.component';
 import {SituacionSolicitudComponent} from './situacion-solicitud/situacion-solicitud.component';
+import {GestionAtencionAsesorComponent} from './gestion-atencion-asesor/gestion-atencion-asesor.component';
+import {AsignaOficinaComponent} from './gestion-atencion-asesor/asigna-oficina/asigna-oficina.component';
 
 @NgModule({
   imports: [
@@ -38,7 +40,9 @@ import {SituacionSolicitudComponent} from './situacion-solicitud/situacion-solic
     TipoSolicitudComponent,
     TipoRequerimientoComponent,
     EstadoSolicitudComponent,
-    SituacionSolicitudComponent
+    SituacionSolicitudComponent,
+    GestionAtencionAsesorComponent,
+    AsignaOficinaComponent
   ]
 })
 export class BaseModule { }

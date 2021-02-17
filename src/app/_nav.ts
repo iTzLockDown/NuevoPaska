@@ -12,36 +12,41 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Gestion Atencion',
-    url: '/base1',
+    url: '/dashboard',
     icon: 'icon-direction',
     children: [
       {
-        name: 'Gestion',
-        url: '/base1/cards',
+        name: 'Lista Solicitudes',
+        url: '/dashboard/listarsolicitud',
         icon: 'icon-list'
       }
     ]
   },
   {
     name: 'Solicitudes',
-    url: '/base2',
+    url: '/dashboard',
     icon: 'icon-direction',
     children: [
       {
         name: 'Nuevo',
-        url: '/base2/cards',
+        url: '/dashboard/registrarsolicitud',
         icon: 'icon-list'
       }
     ]
   },
   {
     name: 'Contratos',
-    url: '/base3',
+    url: '/dashboard',
     icon: 'icon-direction',
     children: [
       {
-        name: 'Nuevo',
-        url: '/base3/cards',
+        name: 'Plantilla Contrato',
+        url: '/dashboard/plantilla',
+        icon: 'icon-list'
+      },
+      {
+        name: 'Nuevo Contrato',
+        url: '/dashboard/nuevo',
         icon: 'icon-list'
       }
     ]
@@ -104,23 +109,11 @@ export const navItems: INavData[] = [
         url: '/base/cards',
         icon: 'icon-list'
       },
-    ]
-  },
-  {
-    name: 'Gestion Personal',
-    url: '/base7',
-    icon: 'icon-direction',
-    children: [
       {
-        name: 'Gestion Colas',
-        url: '/base7/cards',
+        name: 'Gestiona Colas',
+        url: '/base/gestioncola',
         icon: 'icon-list'
       },
-      {
-        name: 'Gestion Oficinas',
-        url: '/base7/cards',
-        icon: 'icon-list'
-      }
     ]
   },
 ];

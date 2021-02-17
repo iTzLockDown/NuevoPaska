@@ -1,0 +1,66 @@
+<div class="container-fluid">
+  <div class="animated fadeIn">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-header">
+            <strong> Cola Unica  </strong>
+            <small>Lista</small>
+          </div>
+          <div class="card-body">
+            <table class="table table-responsive">
+              <thead>
+              <tr>
+                <th width="10%">Código</th>
+                <th width="60%">Úsuario</th>
+                <th width="25%"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let asesor of asesorColaUnica">
+                <td>{{ asesor.cCodUsuWin }} </td>
+                <td>{{asesor.cNomUsuAdm}}</td>
+                <td>
+                  <button class="btn btn-sm btn-cmac-hyo" type="button" (click)="AsignaAsesoresColaMultiple(asesor.cCodUsuWin); "><i class="fa fa-arrow-right" title="Asignar a cola multiple" ></i></button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-header">
+            <strong> Cola Múltiple  </strong>
+            <small>Lista</small>
+          </div>
+          <div class="card-body">
+            <table class="table table-responsive">
+              <thead>
+              <tr>
+                <th width="10%">Código</th>
+                <th width="60%">Usuario</th>
+                <th width="25%"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let asesorMultiple of asesorColaMultiple">
+                <td>{{ asesorMultiple.cCodUsuWin }} </td>
+                <td>{{asesorMultiple.cNomUsuAdm}}</td>
+
+                <td>
+                  <button class="btn btn-sm btn-cmac-hyo" type="button" (click)="AsignaAsesoresColaUnica(asesorMultiple.cCodUsuWin); Actualiza()"><i class="fa fa-arrow-left" title="Asginar a cola unica" ></i></button> |
+                  <button class="btn btn-sm btn-cmac-hyo" type="button" [routerLink]="['asignaoficina', this.asesorMultiple.cCodUsuWin, this.asesorMultiple.cNomUsuAdm]"><i class="fa fa-list" title="Asignar Oficinas" ></i></button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row-->
+    <!-- /.row-->
+  </div>
+</div>

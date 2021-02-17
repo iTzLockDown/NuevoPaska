@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-header">
+    <strong>Formulario</strong> Clasificación de Contratos</div>
+  <div class="card-body">
+    <div class="text-left">
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label">Nombre de la plantilla</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" name="plantilla" [(ngModel)]="clasificacionContratoRequest.Nombre" ng-enter="alert('xVariables')">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label">Agregar Variable</label>
+        <div class="col-md-6">
+          <input type="text" class="form-control"  name="variable" [(ngModel)]="xVariables" ng-enter="alert('xVariables')">
+        </div>
+        <button class="btn btn-cmac-hyo" (click)="AgregarVariable()" > <i class="fa fa-plus"></i> Agregar</button>
+        <label class="col-md-3 col-form-label"></label>
+
+      </div>
+
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label">ng quill</label>
+        <div class="col-md-9">
+          <quill-editor [(ngModel)]="xParrafoGeneral"></quill-editor>
+        </div>
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-xs btn-cmac-hyo" role="button" (click)="DescargarPlantilla()">
+      <i class="fa fa-file-word-o" ></i> Descargar Plantilla</button> &nbsp;
+    <button class="btn btn-sm btn-cmac-hyo" role="button" (click)="Grabar()">
+      <i class="fa fa-save"></i> Grabar</button> &nbsp;
+    <button class="btn btn-sm btn-cmac-hyo" type="reset" (click)="backClicked()">
+      <i class="fa fa-arrow-left"></i> Regresar</button>
+  </div>
+</div>
+</div>
